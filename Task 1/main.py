@@ -20,18 +20,24 @@ users = [
 
 
 def filterDogOwners(users):
-    for user in users:
-        if user.get('hasDog') == True:
-            print(user)
+    # for user in users:
+    #     if user.get('hasDog') == True:
+    #         print(user)
+    dogOwners = list(filter(lambda user: user.get('hasDog') == True, users))
+    print(dogOwners)
+    print(len(dogOwners))
 
 
 filterDogOwners(users)
 
 
 def filterAdults(users):
-    for user in users:
-        if user.get('age') >= 18:
-            print(f' this {user} is adult')
+    # for user in users:
+    #     if user.get('age') >= 18:
+    #         print(f' this {user} is adult')
+    adults = list(filter(lambda user: user.get('age') >= 18, users))
+    print(adults)
+    print(len(adults))
 
 
 filterAdults(users)
