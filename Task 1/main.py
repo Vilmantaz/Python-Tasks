@@ -26,3 +26,12 @@ def filterDogOwners(users):
 
 
 filterDogOwners(users)
+
+
+def filterAdults(users):
+    for user in users:
+        if user.get('age') >= 18:
+            print(f' this {user} is adult')
+
+
+filterAdults(users)
