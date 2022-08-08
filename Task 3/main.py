@@ -12,7 +12,7 @@ audi = {
 
 
 def showObjectKeys(audi):
-    return list(audi.values())
+    return list(audi.keys())
 
 
 print(showObjectKeys(audi))
