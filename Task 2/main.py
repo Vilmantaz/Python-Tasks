@@ -42,6 +42,7 @@ def getUsersNames(users):
     # for user in users:
     #     user_name = user.get('name')
     #     user_names.append(user_name)
+    # user_names.sort()
     # return user_names
     user_names = list(map(lambda user: user.get('name'), users))
     user_names.sort()
